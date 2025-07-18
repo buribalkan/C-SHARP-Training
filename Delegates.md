@@ -114,58 +114,25 @@ notifier.OnNotify += msg => Console.WriteLine($"[Push] {msg}");
 
 
 
-Delegate Type
-
-Parameters
-
-Return Type
-
-Use Case
-
-Action<T>
-
-0 or more
-
-void
-
-General actions
-
-Func<T, TResult>
-
-0 or more
-
-TResult
-
-Transformations
-
-Predicate<T>
-
-1 (T)
-
-bool
-
-Filtering conditions
+| Delegate Type  | Parameters | Return Type | Use Case |
+| --- | --- | --- | --- |
+| Action\<T\> | 0 or more | void | General actions |
+| Func<T, TResult> | 0 or more | TResult | Transformations
+| Predicate\<T\> | 1 (T) | bool | Filtering conditions
 
 
 
 Example
 
-
-
+```csharp
 Action<string> log = Console.WriteLine;
-
 Func<int, int, int> sum = (a, b) => a + b;
-
 Predicate<int> isEven = x => x % 2 == 0;
-
-
-
 log("Hello");
-
 Console.WriteLine(sum(3, 5));      // 8
-
 Console.WriteLine(isEven(4));     // True
 
+```
 
 
 
@@ -173,41 +140,25 @@ Console.WriteLine(isEven(4));     // True
 
 
 
-
-🧪 Real-World: Processing Engine with Delegates
-
+🧪 Processing Engine with Delegates
 
 
+```csharp
 public class InvoiceProcessor
-
 {
-
     public Action<string>? OnProcessed;
-
-
-
     public void Process(string invoiceId)
-
     {
-
         // Business logic...
-
         OnProcessed?.Invoke($"Invoice {invoiceId} processed.");
-
     }
-
 }
-
 var processor = new InvoiceProcessor();
-
 processor.OnProcessed += Console.WriteLine;
-
 processor.OnProcessed += msg => File.AppendAllText("log.txt", msg + Environment.NewLine);
-
-
-
 processor.Process("INV-2025-001");
 
+```
 
 
 
@@ -215,11 +166,10 @@ processor.Process("INV-2025-001");
 
 
 
-
-📊 Mermaid Diagram: Delegate Notification Flow
-
+📊 Diagram: Delegate Notification Flow
 
 
+```mermaid
 classDiagram
 
     class Notifier {
@@ -255,7 +205,7 @@ classDiagram
     NotificationHandler <.. SmsNotifier : assigned to
 
 
-
+```
 
 
 
@@ -288,29 +238,13 @@ classDiagram
 
 
 
-Concept
-
-Explanation
-
-delegate
-
-Type-safe method reference
-
-Action, Func
-
-Built-in generic delegates
-
-+= / -=
-
-Add/remove methods to/from delegate chain
-
-?.Invoke()
-
-Null-safe invocation
-
-Lambda
-
-Anonymous inline functions
+| Concept | Explanation |
+| --- | --- |
+| delegate | Type-safe method reference |
+| Action, Func | Built-in generic delegates |
+| += / -= | Add/remove methods to/from delegate chain |
+| ?.Invoke() | Null-safe invocation |
+| Lambda | Anonymous inline functions
 
 Delegates = Code as Data. They are the building blocks of LINQ, events, and reactive programming in C#.
 
