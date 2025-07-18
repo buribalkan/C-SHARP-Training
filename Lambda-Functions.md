@@ -1,4 +1,4 @@
-# 🧠 C# Lambda Functions — Real-World Guide
+# 🧠 C# Lambda Functions
 
 
 
