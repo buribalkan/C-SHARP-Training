@@ -69,6 +69,121 @@ classDiagram
 
 ```
 
+# Encapsulation in Object-Oriented Programming
+
+Encapsulation is one of the core principles of object-oriented programming. It refers to the practice of **bundling data (attributes) and the methods that operate on that data into a single unit**, typically a class. More importantly, it involves **restricting direct access to some of an object's components**, thereby safeguarding the internal state and logic of the object.
+
+## Purpose of Encapsulation
+
+Encapsulation serves several purposes:
+
+1. **Data protection:** Prevents unauthorized or unintended access and modification of internal data.
+2. **Abstraction:** Hides internal implementation details and exposes only what is necessary.
+3. **Maintainability:** Reduces dependencies between components, making the code easier to modify and refactor.
+4. **Robustness:** Helps prevent inconsistent or invalid object states.
+
+## Real-World Analogy
+
+Consider a class named `CookieJar`. This class holds a private attribute representing the number of cookies in the jar. Rather than allowing direct modification of this attribute, the class provides a public method called `RequestCookie()` to control access.
+
+This is similar to a real cookie jar with a lid—you can't reach in directly; you must ask the jar (or its owner) for a cookie.
+
+## Code Example: CookieJar Class
+
+```csharp
+public class CookieJar
+{
+    // Private field: not accessible directly from outside
+    private int _numberOfCookies;
+
+    // Constructor
+    public CookieJar(int initialCookies)
+    {
+        _numberOfCookies = initialCookies >= 0 ? initialCookies : 0;
+    }
+
+    // Public method to request a cookie
+    public bool RequestCookie()
+    {
+        if (_numberOfCookies > 0)
+        {
+            _numberOfCookies--;
+            Console.WriteLine("Here's a cookie!");
+            return true;
+        }
+        else
+        {
+            Console.WriteLine("Sorry, no cookies left.");
+            return false;
+        }
+    }
+
+    // Optional: public read-only access (encapsulated)
+    public int CookiesRemaining => _numberOfCookies;
+}
+```
+
+### Example Usage:
+
+```csharp
+var jar = new CookieJar(3);
+jar.RequestCookie();  // Output: Here's a cookie!
+jar.RequestCookie();  // Output: Here's a cookie!
+Console.WriteLine(jar.CookiesRemaining); // Output: 1
+```
+
+Direct access to `_numberOfCookies` from outside the class is **not allowed**, preserving the integrity of the data.
+
+## Black Boxing: Hiding the Inner Workings
+
+Encapsulation enforces a "black box" model. The **user of a class does not need to understand its internal implementation**—they only interact with a well-defined public interface.
+
+For example, a phone user doesn't need to understand how radio signals work to make a call. They just press buttons. Similarly, calling `RequestCookie()` is enough; the user doesn't need to know how cookies are tracked internally.
+
+This abstraction **allows the internal implementation to evolve** without affecting the code that uses the object.
+
+## Encapsulation Enables Safe Refactoring
+
+Suppose the original `CookieJar` class tracks cookies with a single integer. Later, you decide to track individual cookie types (e.g., chocolate, vanilla, oatmeal). You can change the internal implementation without affecting external code, as long as the `RequestCookie()` method still works the same way.
+
+```csharp
+// Internal change - no external code needs to change
+private Dictionary<string, int> _cookies = new()
+{
+    { "chocolate", 2 },
+    { "vanilla", 1 }
+};
+```
+
+By hiding the internal structure, **you prevent a change in one part of the code from requiring changes everywhere else**.
+
+## Best Practices
+
+- **Mark fields as `private`** and expose them through methods or properties when necessary.
+- **Expose only what is needed** to other parts of the application.
+- **Encapsulate as much as possible** to increase flexibility and reduce coupling.
+- Use access modifiers (`private`, `protected`, `public`, `internal`) to control visibility.
+
+### Example: Field vs Property Access
+
+```csharp
+// Less safe: public field (bad practice)
+public int NumberOfCookies;
+
+// Safer: public property with encapsulation
+private int _numberOfCookies;
+public int NumberOfCookies
+{
+    get => _numberOfCookies;
+    private set => _numberOfCookies = Math.Max(0, value);
+}
+```
+
+## Conclusion
+
+Encapsulation is not about "hiding secrets" but about **defining clear boundaries** between parts of your program. It protects internal state, enforces valid usage, and makes your code more maintainable and flexible in the long term.
+
+By encapsulating data and exposing only necessary methods, you ensure a robust and scalable object-oriented design.
 
 
 
@@ -298,6 +413,153 @@ classDiagram
 ```
 
 
+# Polymorphism in Object-Oriented Programming
+
+**Polymorphism**, derived from Greek meaning "many forms", is a key principle of object-oriented programming (OOP). It allows objects of different types to be treated through the same interface, enabling flexibility and extensibility in code design.
+
+There are two primary forms of polymorphism:
+
+- **Dynamic (Runtime) Polymorphism**
+- **Static (Compile-Time) Polymorphism**
+
+---
+
+## 1. Dynamic (Runtime) Polymorphism
+
+Dynamic polymorphism allows you to use the same method name and interface to call different behaviors depending on the object type at runtime. This is typically achieved through **method overriding** in **inheritance hierarchies** or via **abstract classes** or **interfaces**.
+
+### Real-World Analogy: Coffee Makers
+
+Imagine two different types of coffee makers:
+
+- A **BasicCoffeeMaker**
+- A **FrenchPress**
+
+Both have the same method signature for brewing coffee:
+
+```csharp
+CupOfCoffee Brew(GroundCoffee coffee, Water water);
+```
+
+However, their brewing processes differ internally. The `BasicCoffeeMaker` uses a paper filter, while the `FrenchPress` uses a metal plunger screen.
+
+### Code Example
+
+```csharp
+public abstract class CoffeeMaker
+{
+    public abstract CupOfCoffee Brew(GroundCoffee coffee, Water water);
+}
+
+public class BasicCoffeeMaker : CoffeeMaker
+{
+    public override CupOfCoffee Brew(GroundCoffee coffee, Water water)
+    {
+        Console.WriteLine("Brewing with paper filter...");
+        return new CupOfCoffee("Standard Coffee");
+    }
+}
+
+public class FrenchPress : CoffeeMaker
+{
+    public override CupOfCoffee Brew(GroundCoffee coffee, Water water)
+    {
+        Console.WriteLine("Brewing with French press...");
+        return new CupOfCoffee("Rich French Press Coffee");
+    }
+}
+```
+
+### Usage
+
+```csharp
+CoffeeMaker maker;
+
+maker = new BasicCoffeeMaker();
+maker.Brew(new GroundCoffee(), new Water());
+
+maker = new FrenchPress();
+maker.Brew(new GroundCoffee(), new Water());
+```
+
+Even though we use the same `maker.Brew()` method, the actual method executed depends on the **concrete type** of the object (`BasicCoffeeMaker` or `FrenchPress`). This is **dynamic dispatch**.
+
+### Benefits
+
+- Enables **code flexibility** and **interchangeability**.
+- Allows **behavior customization** in derived classes.
+- Supports **abstraction** and **interface-based design**.
+
+---
+
+## 2. Static (Compile-Time) Polymorphism
+
+Static polymorphism is achieved through **method overloading**. This allows multiple methods in the same class to have the same name but **different parameter lists** (either in number, order, or type of parameters).
+
+### Example: Overloading Brew Method
+
+```csharp
+public class FrenchPress
+{
+    public CupOfCoffee Brew(GroundCoffee coffee, Water water)
+    {
+        return new CupOfCoffee("Coffee");
+    }
+
+    public CupOfTea Brew(TeaLeaves tea, Water water)
+    {
+        return new CupOfTea("Tea");
+    }
+
+    public Drink Brew(GroundCoffee coffee, TeaLeaves tea, Water water)
+    {
+        return new Drink("Mixed Beverage (Not Recommended)");
+    }
+}
+```
+
+### Usage
+
+```csharp
+FrenchPress press = new FrenchPress();
+
+var coffee = press.Brew(new GroundCoffee(), new Water());
+var tea = press.Brew(new TeaLeaves(), new Water());
+var strange = press.Brew(new GroundCoffee(), new TeaLeaves(), new Water());
+```
+
+Each `Brew` method has the same name but is distinguished by **parameter signature**, and the compiler chooses the appropriate one based on the arguments provided at **compile time**.
+
+### Method Overloading vs Overriding
+
+| Concept         | Overloading                         | Overriding                           |
+|-----------------|-------------------------------------|---------------------------------------|
+| When            | Compile-time                        | Runtime                               |
+| Scope           | Within same class                   | Across base and derived classes       |
+| Parameters      | Must differ                         | Must match exactly                    |
+| Purpose         | Multiple behaviors for different inputs | Redefine behavior in derived class |
+
+---
+
+## Summary
+
+Polymorphism allows for:
+
+- Writing **generalized code** that works with different types.
+- **Extending systems** without modifying existing code.
+- Achieving **loose coupling** between components.
+
+### Two Key Forms:
+
+1. **Dynamic Polymorphism**  
+   - Achieved via **inheritance**, **abstract classes**, or **interfaces**  
+   - Uses **method overriding** to provide specific implementations
+
+2. **Static Polymorphism**  
+   - Achieved via **method overloading**  
+   - Allows multiple methods with the same name but different parameters
+
+Together, these techniques make object-oriented systems **more modular**, **easier to maintain**, and **more extensible**.
 
 
 
