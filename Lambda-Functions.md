@@ -40,12 +40,11 @@ If the lambda contains more than one statement, use {}:
 ✅ Example: Replacing Anonymous Method
 
 
-
-Action\<string\> log = msg => 
-
+```csharp
+Action<string> log = msg => 
 Console.WriteLine($"[LOG] {msg}");
-
 log("App started.");
+```
 
 
 
