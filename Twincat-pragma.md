@@ -81,7 +81,7 @@ InternalState : INT;
 
 ---
 
-## 📊 Mermaid: Pragma Processing Flow
+## 📊 Pragma Processing Flow
 
 ```mermaid
 graph TD
@@ -95,6 +95,10 @@ graph TD
 ```
 
 ---
+## Message pragmas
+Message pragmas force the output of messages in the message window during the compilation process.
+
+Insertion location: Separate or already existing line in the text editor of a POU.
 ```pascal
 VAR 
     nVar : INT; {info 'TODO: should get another name'} 
@@ -102,12 +106,13 @@ VAR
     aTest : ARRAY [0..10] OF INT; 
     nIdx : INT; 
 END_VAR 
-
+...
 aTest[nIdx] := aTest[nIdx]+1; 
 nVar := nVar+1; 
 
 {warning 'This is a warning'} 
-{text 'Part xy has been compiled completely'} 
+{text 'Part xy has been compiled completely'}
+...
 ```
 ## 🧠 Notes
 
