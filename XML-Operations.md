@@ -12,6 +12,25 @@ C# provides several ways to work with XML:
 - `System.Xml.Linq` namespace (LINQ to XML - modern and easier)
 - Serialization / Deserialization with `XmlSerializer`
 
+🗂️ XML Belgesi:
+
+  🔖 <user 🧷 id="123">
+
+    🔖 <name> 📄 Alice </name>
+  
+    🔖 <email> 📄 alice@example.com </email>
+  
+    🔖 <roles>
+  
+      🔖 <role> 📄 admin </role>
+    
+      🔖 <role> 📄 editor </role>
+    
+    🔖 </roles>
+  
+  🔖 \</user\>
+
+
 ---
 
 ## 🔧 Common Libraries
