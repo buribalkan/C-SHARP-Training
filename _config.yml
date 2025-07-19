@@ -1,1 +1,6 @@
-
+title: C# Training
+theme: minima
+permalink: pretty
+markdown: kramdown
+plugins:
+  - jekyll-mermaid
