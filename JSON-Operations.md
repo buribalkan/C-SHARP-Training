@@ -1,4 +1,4 @@
-# 🧾 JSON Operations in C#
+# 🧾 `JSON` Operations in C#
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-## 📌 What is JSON?
+## 📌 What is `JSON`?
 
 
 
