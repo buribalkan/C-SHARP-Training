@@ -7,3 +7,6 @@ body {
 .card:hover {
   transform: scale(1.02);
 }
+.post-title{
+  display: none;
+}
