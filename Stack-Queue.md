@@ -169,7 +169,7 @@ After two `Dequeue()` operations, **Hockey** becomes the new front of the queue.
 
 - [Microsoft Docs - Stack\<T>](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.stack-1)
 - [Microsoft Docs - Queue\<T>](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.queue-1)
-- [Pluralsight Course: Foundations of Programming - Data Structures](https://www.pluralsight.com/courses/foundations-programming-data-structures)
+
 
 ---
 
