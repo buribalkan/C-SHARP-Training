@@ -6,7 +6,7 @@
 
 
 
-## 📘 What is a String in C#?
+## 📘 What is a `String` in C#?
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-## 🔤 Creating Strings
+## 🔤 Creating `Strings`
 
 
 
