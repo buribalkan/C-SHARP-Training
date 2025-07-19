@@ -6,6 +6,22 @@
 
 C# provides powerful APIs to perform file operations such as creating, reading, writing, copying, moving, and deleting files using the `System.IO` namespace.
 
+
+📁 /project
+
+      📄 index.html
+  
+      📄 style.css
+  
+      📜 script.js
+  
+      🧱 config.yaml
+  
+      📦 archive.zip
+  
+      📊 data.csv
+
+
 ---
 
 ## 🔧 Common Namespaces
