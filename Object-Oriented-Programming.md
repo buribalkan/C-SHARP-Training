@@ -565,10 +565,6 @@ Together, these techniques make object-oriented systems **more modular**, **easi
 
 🧼 4. Abstraction
 
-
-
-
-
 Abstraction hides complex logic and exposes only necessary behavior via abstract classes or interfaces.
 ```csharp
 public abstract class PaymentProcessor
@@ -587,27 +583,17 @@ public class CreditCardProcessor : PaymentProcessor
 
 📊 Abstraction
 
-
 ```mermaid
 classDiagram
 
     class PaymentProcessor {
-
         <<abstract>>
-
-        +ProcessPayment(decimal)
-
+        +ProcessPayment(amount)
     }
-
-
 
     class CreditCardProcessor {
-
-        +ProcessPayment(decimal)
-
+        +ProcessPayment(amount)
     }
-
-
 
     PaymentProcessor <|-- CreditCardProcessor
 
