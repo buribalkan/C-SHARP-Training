@@ -1,4 +1,4 @@
-## 📘 What is an Interface?
+## 📘 What is an `Interface`?
 
 Interfaces define contracts that classes must follow — especially common in service-oriented and layered architectures.
 
