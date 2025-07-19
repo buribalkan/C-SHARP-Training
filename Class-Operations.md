@@ -26,7 +26,7 @@ public class Product
 
 
 
-📊 Diagram: Product Class
+## 📊 Diagram: Product Class
 
 ```mermaid
 
@@ -52,7 +52,7 @@ classDiagram
 
 
 
-📌 2. Inheritance
+## 📌 2. Inheritance
 
 ```csharp
 
@@ -73,7 +73,7 @@ public class Electronic : Product
 
 
 
-📊 Diagram: Inheritance
+## 📊 Diagram: Inheritance
 
 ```mermaid
 
@@ -111,7 +111,7 @@ classDiagram
 
 
 
-📌 3. Composition (Has-A Relationship)
+## 📌 3. Composition (Has-A Relationship)
 
 ```csharp
 
@@ -134,7 +134,7 @@ public class Address
 
 
 
-📊 Diagram: Composition
+## 📊 Diagram: Composition
 
 
 ```mermaid
@@ -170,7 +170,7 @@ classDiagram
 
 
 
-📌 4. Encapsulation
+## 📌 4. Encapsulation
 
 
 ```csharp
@@ -199,7 +199,7 @@ public class BankAccount
 
 
 
-📊 Diagram: Encapsulation
+## 📊 Diagram: Encapsulation
 
 ```mermaid
 
@@ -227,7 +227,7 @@ classDiagram
 
 
 
-📌 5. Abstract Class vs Concrete Class
+## 📌 5. Abstract Class vs Concrete Class
 
 
 ```csharp
@@ -252,7 +252,7 @@ public class Car : Vehicle
 
 
 
-📊 Diagram: Abstract Class
+## 📊 Diagram: Abstract Class
 
 
 ```mermaid
@@ -286,7 +286,7 @@ classDiagram
 
 
 
-✅ Summary of Key Class Concepts
+## ✅ Summary of Key Class Concepts
 
 
 
