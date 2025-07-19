@@ -1,9 +1,0 @@
-title: C# Training
-theme: minima
-permalink: pretty
-markdown: kramdown
-highlighter: rouge
-kramdown:
-  syntax_highlighter: rouge
-  syntax_highlighter_opts:
-    default_lang: python
