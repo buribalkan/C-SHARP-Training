@@ -2,7 +2,27 @@
 
 In TwinCAT (IEC 61131-3 Structured Text), `#PRAGMA` directives are used to **instruct the compiler or code generator** about special handling of variables, methods, structures, or compiler behavior.
 
+
+
+```mermaid
+flowchart LR
+    nIn[nInByte]
+    shift[Shift Amount: 2]
+    SHLBlock[ SHL ]
+    nOut[nResByte]
+
+    nIn --> SHLBlock
+    shift --> SHLBlock
+    SHLBlock --> nOut
+
+    style SHLBlock fill:#dbeafe,stroke:#60a5fa,stroke-width:2px
+    style nIn fill:#fff,stroke:#999,stroke-width:1px
+    style shift fill:#fff,stroke:#999,stroke-width:1px
+    style nOut fill:#fff,stroke:#999,stroke-width:1px
+```
 ---
+
+
 
 ## 🔧 Syntax
 ```iecst
