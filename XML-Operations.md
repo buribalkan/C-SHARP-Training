@@ -180,7 +180,7 @@ foreach (var title in titles)
 
 ```mermaid
 flowchart TD
-    A[Input XML String/File] --> B[Parse with XDocument or XmlReader]
+    A[Input XML String/File] --> B[Parse with XmlReader]
     B --> C[Query / Read Data]
     C --> D[Modify or Create XML]
     D --> E[Serialize or Write XML]
@@ -199,7 +199,6 @@ flowchart TD
 
 ## 📚 References
 
-- [Microsoft Docs - LINQ to XML](https://learn.microsoft.com/en-us/dotnet/standard/linq/linq-to-xml-overview)
 - [Microsoft Docs - XmlSerializer](https://learn.microsoft.com/en-us/dotnet/api/system.xml.serialization.xmlserializer)
 - [Microsoft Docs - XmlReader](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader)
 - [Microsoft Docs - XmlWriter](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlwriter)
