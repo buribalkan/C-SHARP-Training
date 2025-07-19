@@ -114,7 +114,8 @@ class Example
         Console.WriteLine("\nstack2.Count = {0}", stack2.Count);
     }
 }
-```
+
+
 /* This code example produces the following output:
 
 five
@@ -146,6 +147,8 @@ stack2.Clear()
 
 stack2.Count = 0
  */
+```
+
 
 
 
