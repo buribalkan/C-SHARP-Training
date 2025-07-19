@@ -294,7 +294,7 @@ class Example
         Console.WriteLine("\nqueueCopy.Count = {0}", queueCopy.Count);
     }
 }
-```
+
 /* This code example produces the following output:
 
 one
@@ -326,6 +326,8 @@ queueCopy.Clear()
 
 queueCopy.Count = 0
  */
+```
+
 ---
 
 ### 🔁 Queue Operations (Visualized)
