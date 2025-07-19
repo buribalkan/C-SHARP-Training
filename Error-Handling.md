@@ -35,7 +35,7 @@ finally
 
 ---
 
-## 📊 Exception Hierarchy (Mermaid Diagram)
+## 📊 Diagram: Exception Hierarchy
 
 ```mermaid
 classDiagram
