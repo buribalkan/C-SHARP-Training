@@ -1,6 +1,6 @@
 # 📚 Dictionaries in C#
 
-A **Dictionary** in C# is a generic collection that stores **key-value pairs**. It allows **fast lookups**, additions, and deletions using a unique key.
+A **`Dictionary`** in C# is a generic collection that stores **key-value pairs**. It allows **fast lookups**, additions, and deletions using a unique key.
 
 ---
 
