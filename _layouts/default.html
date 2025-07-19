@@ -49,6 +49,23 @@
     </main>
   </div>
 </div>
+  <script type="module">
+  import hljs from 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/es/highlight.min.js';
+
+  function escapeHtml(text) {
+    return text
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;");
+  }
+
+  document.querySelectorAll('pre.highlight > code').forEach((codeBlock) => {
+    const escaped = escapeHtml(codeBlock.textContent);
+    codeBlock.parentElement.outerHTML = `<pre><code class="language-csharp">${escaped}</code></pre>`;
+  });
+
+  hljs.highlightAll();
+</script>
 <script type="module">
   import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
   mermaid.initialize({ startOnLoad: true });
