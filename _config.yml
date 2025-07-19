@@ -4,3 +4,7 @@ permalink: pretty
 markdown: kramdown
 plugins:
   - jekyll-mermaid
+kramdown:
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    default_lang: csharp
