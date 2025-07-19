@@ -1,16 +1,16 @@
-# 📦 Understanding Stack and Queue in .NET with Examples
+# 📦 Understanding `Stack` and `Queue` in .NET with Examples
 
 This guide explains two commonly used data structures in programming: **Stack** and **Queue**, using C# and .NET's generic collections. These structures help manage collections of items in a specific order and are foundational concepts in algorithms and data processing.
 
 ---
 
-## 📚 Stack: Last-In, First-Out (LIFO)
+## 📚 `Stack`: Last-In, First-Out (LIFO)
 
 A **stack** follows the **Last-In, First-Out (LIFO)** principle. The last item added (pushed) to the stack is the first one to be removed (popped).
 
 > **Real-life analogy**: Think of a stack of plates — you add to the top and remove from the top.
 
-### 🧰 Stack Methods in .NET
+### 🧰 `Stack` Methods in .NET
 
 | Method/Property   | Description                                        |
 |-------------------|----------------------------------------------------|
@@ -188,7 +188,7 @@ A **queue** follows the **First-In, First-Out (FIFO)** principle. The first item
 
 > **Real-life analogy**: Think of a line at the grocery store. First person in line gets served first.
 
-### 🧰 Queue Methods in .NET
+### 🧰 `Queue` Methods in .NET
 
 | Method/Property     | Description                                          |
 |---------------------|------------------------------------------------------|
