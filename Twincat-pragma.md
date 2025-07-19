@@ -114,6 +114,23 @@ nVar := nVar+1;
 {text 'Part xy has been compiled completely'}
 ...
 ```
+## Conditional pragmas
+Conditional pragmas are used to influence the code generation in the precompile process or the compile process. The programming language ST supports these pragmas.
+
+## Region pragma
+The pragma is used to consolidate multiple lines in a text editor to a block. The block can be assigned a name. Region pragmas can be nested.
+
+Syntax: {region "description"} … {endregion}
+
+Be sure to follow this syntax so that the pragma is taken into account.
+
+Code with region pragma: Extended and reduced view
+
+The pragma can be used in the ST editor and all declaration editors. Syntax highlighting can be adapted in the options.
+
+
+
+
 ## 🧠 Notes
 
 - Pragmas **do not affect logic flow**, only metadata or compiler behavior.
