@@ -13,7 +13,7 @@ C# provides several ways to work with XML:
 - Serialization / Deserialization with `XmlSerializer`
 
 🗂️ XML Belgesi:
-
+```csharp
   🔖 <user 🧷 id="123">
 
     🔖 <name> 📄 Alice </name>
@@ -29,7 +29,7 @@ C# provides several ways to work with XML:
     🔖 </roles>
   
   🔖 \</user\>
-
+```
 
 ---
 
