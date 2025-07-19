@@ -1,8 +1,8 @@
-# 📗 XML Operations in C#
+# 📗 `XML` Operations in C#
 
 ---
 
-## 📌 What is XML?
+## 📌 What is `XML`?
 
 **XML** (eXtensible Markup Language) is a markup language for storing and transporting data in a structured, hierarchical format.
 
