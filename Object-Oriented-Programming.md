@@ -586,8 +586,8 @@ public class CreditCardProcessor : PaymentProcessor
 ```mermaid
 classDiagram
 
+    %% PaymentProcessor is abstract
     class PaymentProcessor {
-        <<abstract>>
         +ProcessPayment(amount)
     }
 
