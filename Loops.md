@@ -21,11 +21,8 @@ Use when the number of iterations is known.
 ```csharp
 
 for (int i = 0; i < 5; i++)
-
 {
-
     Console.WriteLine($"Iteration {i}");
-
 }
 
 ```
@@ -65,15 +62,10 @@ Repeats **as long as a condition is true**.
 ```csharp
 
 int count = 0;
-
 while (count < 3)
-
 {
-
     Console.WriteLine($"Count: {count}");
-
     count++;
-
 }
 
 ```
@@ -109,17 +101,11 @@ Like `while`, but **guarantees at least one execution**.
 ```csharp
 
 int num = 0;
-
 do
-
 {
-
     Console.WriteLine($"Number: {num}");
-
     num++;
-
 }
-
 while (num < 2);
 
 ```
@@ -153,13 +139,9 @@ Iterates over a **collection** or array.
 ```csharp
 
 string[] fruits = { "Apple", "Banana", "Cherry" };
-
 foreach (var fruit in fruits)
-
 {
-
     Console.WriteLine(fruit);
-
 }
 
 ```
@@ -188,15 +170,11 @@ Cherry
 
 
 
-| Keyword     | Description                                             |
-
-|-------------|---------------------------------------------------------|
-
-| `break`     | Exits the current loop entirely                         |
-
+| Keyword     | Description |
+| ----------- | ----------- |
+| `break`     | Exits the current loop entirely |
 | `continue`  | Skips the current iteration and continues with the next |
-
-| `return`    | Exits the current method (also ends loop)               |
+| `return`    | Exits the current method (also ends loop) |
 
 
 
@@ -207,15 +185,10 @@ Cherry
 ```csharp
 
 for (int i = 0; i < 5; i++)
-
 {
-
     if (i == 2) continue;
-
     if (i == 4) break;
-
     Console.WriteLine(i);
-
 }
 
 ```
@@ -244,17 +217,12 @@ for (int i = 0; i < 5; i++)
 
 
 
-| Loop Type     | Use Case                                        |
-
-|---------------|-------------------------------------------------|
-
-| `for`         | Known number of repetitions (e.g. index-based)  |
-
-| `while`       | Repeat until a condition becomes false          |
-
-| `do...while`  | Always run at least once                        |
-
-| `foreach`     | Iterate over collections or arrays              |
+| Loop Type     | Use Case |
+| --------------- | ---------- |
+| `for`| Known number of repetitions (e.g. index-based)  |
+| `while` | Repeat until a condition becomes false |
+| `do...while`| Always run at least once |
+| `foreach`| Iterate over collections or arrays |
 
 
 
