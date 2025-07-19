@@ -1,4 +1,4 @@
-## 🧱 C# Class Operations 
+# 🧱 C# Class Operations 
 
 
 ## 📌 1. Class Definition & Properties
