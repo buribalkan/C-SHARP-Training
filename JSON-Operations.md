@@ -11,8 +11,19 @@
 
 
 **JSON** (JavaScript Object Notation) is a lightweight data-interchange format that is easy for humans to read and write and easy for machines to parse and generate.
-
-
+```csharp
+📦 User JSON:
+{
+  🔑 "id": 🔢 123,
+  🔑 "name": 📄 "Jessica",
+  🔑 "isActive": true,
+  🔑 "roles": 📚 ["admin", "editor"],
+  🔑 "profile": 🧩 {
+    🔑 "email": 📄 "Jessica@example.com",
+    🔑 "age": 🔢 29
+  }
+}
+```
 
 In C#, we use libraries such as:
 
