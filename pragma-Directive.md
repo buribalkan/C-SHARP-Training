@@ -66,7 +66,7 @@ int unusedVar;
 graph TD
   Start[Code Compilation]
   Start --> CheckWarnings[Check for Warnings]
-  CheckWarnings --> Suppressed[Is Warning Suppressed by pragma?]
+  CheckWarnings --> Suppressed[Is Warning Suppressed]
   Suppressed -- Yes --> SkipWarning[Ignore Warning]
   Suppressed -- No --> ShowWarning[Display Compiler Warning]
   SkipWarning --> Continue[Continue Compilation]
