@@ -61,7 +61,7 @@
 
   document.querySelectorAll('pre.highlight > code').forEach((codeBlock) => {
     const escaped = escapeHtml(codeBlock.textContent);
-    codeBlock.parentElement.outerHTML = `<pre><code class="language-csharp codeArea">${escaped}</code></pre>`;
+    codeBlock.parentElement.outerHTML = `<pre><code style="background: #f4f4f4;" class="language-csharp codeArea">${escaped}</code></pre>`;
   });
 
   hljs.highlightAll();
