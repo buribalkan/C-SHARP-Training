@@ -23,7 +23,51 @@ flowchart LR
 ---
 
 
+```pascal
+nVar := NOT 2#1001_0011 
+```
+```mermaid
+flowchart LR
+    nIn[2#1001_0011]
+    NOTBlock[ NOT ]
+    nOut[nVar]
 
+    nIn --> NOTBlock
+    NOTBlock --> nOut
+
+    style NOTBlock fill:#dbeafe,stroke:#60a5fa,stroke-width:2px
+    style nIn fill:#fff,stroke:#999,stroke-width:1px
+    style nOut fill:#fff,stroke:#999,stroke-width:1px
+```
+
+```pascal
+{attribute 'qualified_only'}
+{attribute 'strict'}
+TYPE E_ColorBasic :
+(
+    eRed, 
+    eYellow,
+    eGreen := 10,
+    eBlue,
+    eBlack
+) // Basic data type is INT, default initialization for all E_ColorBasic  variables is eYellow
+;
+END_TYPE
+```
+
+```pascal
+TYPE E_Color :
+(
+    eWhite  := 16#FFFFFF,
+    eYellow := 16#FFFF00,
+    eGreen  := 16#FF00FF,
+    eBlue   := 16#0000FF,
+    eBlack  := 16#000000
+)DWORD := eBlack
+; // Basic data type is DWORD, default initialization for all E_Color variables is eBlack
+END_TYPE
+
+```
 ## 🔧 Syntax
 ```iecst
 {#PRAGMA <directive> [<parameters>]}
