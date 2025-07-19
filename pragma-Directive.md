@@ -84,7 +84,38 @@ graph TD
 | Use case                 | Suppress known or harmless warnings             |
 
 ---
+## C# `#region` Directive 
 
+The `#region` directive in C# is used to **organize and collapse sections of code** in development environments like **Visual Studio**. It's a **compile-time directive**, meaning it doesn't affect the compiled output — it only impacts code navigation and readability within the IDE.
+
+---
+
+## 📌 Syntax
+
+```csharp
+#region Description
+// Code block
+#endregion
+```
+
+## 📌 Example
+
+```csharp
+public class MyService
+{
+    #region Fields
+    private int _counter;
+    private string _name;
+    #endregion
+
+    #region Methods
+    public void DoWork()
+    {
+        Console.WriteLine("Working...");
+    }
+    #endregion
+}
+```
 ## 📚 Related
 
 
