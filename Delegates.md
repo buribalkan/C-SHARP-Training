@@ -1,8 +1,8 @@
-# 🧠 C# Delegates Explained with Real-World Examples
+# 🧠 C# `Delegate`s Explained
 
 
 
-A **delegate** in C# is a **type-safe function pointer**. It allows you to **pass methods as parameters**, **store them**, or **execute them dynamically**.
+A **`delegate`** in C# is a **type-safe function pointer**. It allows you to **pass methods as parameters**, **store them**, or **execute them dynamically**.
 
 
 
