@@ -264,7 +264,7 @@ Person p = JsonConvert.DeserializeObject<Person>(json);
 | ----- | ------ | ----- |
 | Serialize | `JsonSerializer.Serialize` | Convert object → JSON string |
 | Deserialize | `JsonSerializer.Deserialize` | JSON string → Object |
-| File I/O | `File.WriteAllText` | `ReadAllText` | Read/write JSON to files |
+| File I/O | `File.WriteAllText` / `ReadAllText` | Read/write JSON to files |
 | Dynamic Access | `JsonDocument` | Read JSON without model |
 | Legacy Support | `Newtonsoft.Json` | Older projects or advanced use cases |
 
