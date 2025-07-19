@@ -106,5 +106,5 @@ graph TD
 
 ## 📚 References
 
-- [Beckhoff InfoSystem – Pragmas](https://infosys.beckhoff.com/english.php?content=../content/1033/tcplccontrol/html/tcplccontrol_pragmas.htm&id=)
-- [TwinCAT 3 Programming Manual](https://www.beckhoff.com/en-en/support/download-documentation/)
+- [TwinCAT 3 Programming Manual](https://infosys.beckhoff.com/english.php?content=../content/1033/tcplccontrol/html/tcplccontrol_pragmas.htm&id=)
+
