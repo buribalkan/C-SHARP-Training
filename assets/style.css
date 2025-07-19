@@ -1,0 +1,9 @@
+body {
+  font-family: system-ui, sans-serif;
+}
+.card {
+  transition: transform 0.2s ease;
+}
+.card:hover {
+  transform: scale(1.02);
+}
