@@ -95,7 +95,20 @@ graph TD
 ```
 
 ---
+```
+VAR 
+    nVar : INT; {info 'TODO: should get another name'} 
+    bVar : BOOL; 
+    aTest : ARRAY [0..10] OF INT; 
+    nIdx : INT; 
+END_VAR 
 
+aTest[nIdx] := aTest[nIdx]+1; 
+nVar := nVar+1; 
+
+{warning 'This is a warning'} 
+{text 'Part xy has been compiled completely'} 
+```
 ## 🧠 Notes
 
 - Pragmas **do not affect logic flow**, only metadata or compiler behavior.
