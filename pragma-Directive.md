@@ -60,7 +60,7 @@ int unusedVar;
 
 ---
 
-## 📊 Mermaid Diagram: How `#pragma warning` works
+## 📊 Diagram: How `#pragma warning` works
 
 ```mermaid
 graph TD
@@ -87,5 +87,5 @@ graph TD
 
 ## 📚 Related
 
-- [`#if`, `#else`, `#endif`] — for conditional compilation
+
 - [Microsoft Docs on `#pragma`](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning)
