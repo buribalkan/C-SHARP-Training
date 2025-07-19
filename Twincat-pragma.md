@@ -95,7 +95,7 @@ graph TD
 ```
 
 ---
-```
+```pascal
 VAR 
     nVar : INT; {info 'TODO: should get another name'} 
     bVar : BOOL; 
