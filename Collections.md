@@ -257,29 +257,19 @@ linked.AddLast(2);
 ```mermaid
 
 graph TD
-
     A[C# Collections] --> B[Generic]
-
     A --> C[Non-Generic]
-
+    
     B --> D[List<T>]
-
     B --> E[Dictionary<TKey, TValue>]
-
     B --> F[Queue<T>]
-
     B --> G[Stack<T>]
-
     B --> H[HashSet<T>]
-
     B --> I[LinkedList<T>]
-
     B --> J[SortedList<TKey, TValue>]
-
+    
     C --> K[ArrayList]
-
     C --> L[Hashtable]
-
 ```
 
 
