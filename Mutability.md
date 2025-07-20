@@ -19,6 +19,18 @@
 - **Immutable** objects **cannot be changed** — any modification creates a **new instance**.
 ---
 
+## 🔄 **Mutable vs 🔒 Immutable in C#**
+
+1. 🔄 **Mutable Types**:  
+   - These are types where the data or state can be changed after the object is created.
+   - Examples: **Classes**, **Arrays**, **Lists**, **Dictionaries**.
+
+2. 🔒 **Immutable Types**:  
+   - These are types whose data cannot be changed after they are created. If you want to change their content, a new instance must be created.
+   - Examples: **Structs (by default)**, **Strings**, **Tuples**, **Readonly fields**.
+
+---
+
 
 
 ## 🧪 Immutable Types in C#
@@ -56,6 +68,61 @@ Console.WriteLine(b); // Output: "Hello"
 
 🔍 `a` was modified, but `b` still holds the original value.
 
+
+🔸🔸🔸
+
+
+📌 **Tuples** in C# are also immutable. Once a tuple is created, its values cannot be changed.
+
+```csharp
+
+class Program
+{
+    static void Main()
+    {
+        var person = (Name: "Alice", Age: 30);
+        // person.Name = "Bob";  // This would cause a compile-time error!
+
+        Console.WriteLine(person.Name);  // Output: Alice
+        Console.WriteLine(person.Age);   // Output: 30
+    }
+}
+```
+🔍 The values in the person tuple cannot be modified after the tuple is created.
+
+🔸🔸🔸
+
+📌 You can use readonly fields in C# to create immutable data in classes. These fields can be assigned a value only in the constructor or during initialization.
+
+```csharp
+public class Product
+{
+    public readonly string Name;
+    public readonly decimal Price;
+
+    public Product(string name, decimal price)
+    {
+        Name = name;
+        Price = price;
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        var product = new Product("Laptop", 1000m);
+        // product.Name = "Phone";  // Error: cannot modify readonly field
+        // product.Price = 500m;     // Error: cannot modify readonly field
+
+        Console.WriteLine(product.Name);  // Output: Laptop
+        Console.WriteLine(product.Price); // Output: 1000
+    }
+}
+```
+
+🔍 The readonly fields in the Product class cannot be modified after they are assigned during object construction.
+
 ---
 
 
@@ -84,7 +151,7 @@ p.Name = "Bob"; // Object modified!
 
 ```
 
-
+🔸🔸🔸
 
 ---
 
@@ -111,7 +178,26 @@ pt.X = 5; // Mutable
 
 ```
 
+🔸🔸🔸
 
+
+📌 Arrays in C# are mutable. You can change the values of the elements within an array.
+
+```csharp
+
+class Program
+{
+    static void Main()
+    {
+        int[] numbers = { 1, 2, 3, 4 };
+        numbers[0] = 10;  // Modifying an element in the array
+
+        Console.WriteLine(numbers[0]);  // Output: 10
+    }
+}
+```
+
+🔍 The array elements can be modified even after the array is created.
 
 ---
 
