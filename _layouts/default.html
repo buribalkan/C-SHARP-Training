@@ -105,6 +105,18 @@
     });
   });
 </script>
+  <script>
+  document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', function () {
+      // Tüm nav-link öğelerinden active sınıfını kaldır
+      document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+      
+      // Tıklanan linke active sınıfını ekle
+      this.classList.add('active');
+    });
+  });
+</script>
+
 
 </body>
 </html>
