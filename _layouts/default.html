@@ -30,30 +30,6 @@
       padding: 1em;
       border-radius: 5px;
     }
-    /* Sidebar için stil */
-.sidebar-sticky {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 250px; /* Sidebar genişliği */
-  height: 100vh;
-  background-color: #f8f9fa;
-  padding-top: 20px;
-}
-
-/* Sayfa içeriği (eğitim içeriği) */
-.content-area {
-  margin-left: 270px; /* Sidebar genişliği kadar boşluk bırak */
-  padding-top: 20px; /* Sayfanın üst kısmında boşluk bırak */
-  padding-right: 20px;
-  padding-bottom: 20px;
-}
-
-/* Eğer sidebar sayfa uzunluğuna göre scroll yapması gerekiyorsa */
-.content-area {
-  min-height: 100vh;
-  padding-top: 40px;
-}
   </style>
   
   <!-- Bootstrap CSS -->
@@ -63,18 +39,16 @@
 </head>
 <body>
 
-<div class="container-fluid">
-  <div class="row">
-    <!-- Sidebar -->
-    <nav id="sidebar" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse show">
-      {% include sidebar.html %}
-    </nav>
+<div class="d-flex">
+  <!-- Sidebar -->
+  <nav id="sidebar" class="bg-light sidebar collapse show" style="min-height: 100vh;">
+    {% include sidebar.html %}
+  </nav>
 
-    <!-- Main content area -->
-    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 py-4">
-      {{ content }}
-    </main>
-  </div>
+  <!-- Main content area -->
+  <main class="flex-grow-1 p-4">
+    {{ content }}
+  </main>
 </div>
 
 <!-- jQuery (Bootstrap için gerekli) -->
