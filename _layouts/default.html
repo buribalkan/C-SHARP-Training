@@ -95,6 +95,24 @@
     sidebar.classList.toggle('collapse');
   });
 </script>
+  <script>
+  // JavaScript to ensure only one menu is expanded at a time
+  var collapseElements = document.querySelectorAll('.collapse');
+
+  collapseElements.forEach(function(collapse) {
+    collapse.addEventListener('show.bs.collapse', function () {
+      // Close all other collapses
+      collapseElements.forEach(function(otherCollapse) {
+        if (otherCollapse !== collapse) {
+          var bsCollapse = new bootstrap.Collapse(otherCollapse, {
+            toggle: false
+          });
+          bsCollapse.hide();
+        }
+      });
+    });
+  });
+</script>
 
 </body>
 </html>
