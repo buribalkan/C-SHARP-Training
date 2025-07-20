@@ -5,6 +5,12 @@
 ## 📌 Overview
 
 CSV (Comma-Separated Values) is a simple file format used to store tabular data (numbers and text) in plain text.
+```csharp
+🔑 "ID", "Name", "Age", "City"
+📝 1, "Alice", 30, "New York"
+📝 2, "Bob", 25, "Los Angeles"
+📝 3, "Charlie", 35, "Chicago"
+```
 
 In C#, common ways to work with CSV files include:
 
