@@ -143,7 +143,7 @@ The fastest way to quickly test and understand code is by using **Polyglot Noteb
 **Polyglot Notebooks** are interactive notebooks that support multiple programming languages within the same environment, such as **C#**, **F#**, **PowerShell**, and more.
 
 
-### How to Integrate Polyglot Notebooks into Visual Studio Code
+### <span style="color:blue">How to Integrate Polyglot Notebooks into Visual Studio Code</span>
 ---
 #### 1. Install Visual Studio Code
 
@@ -180,7 +180,7 @@ You should see the installed .NET version as output.
 #### Requirements to Run C# Code
 
 - Installed .NET SDK on your machine (usually .NET 6 or later is recommended).
-- <u>**Polyglot Notebooks**</u> extension in Visual Studio Code.
+- **Polyglot Notebooks** extension in Visual Studio Code.
 - (_Optional_) C# extension for better IntelliSense and debugging support.
 
 #### Example of a C# Cell
