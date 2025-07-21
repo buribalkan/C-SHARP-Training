@@ -77,45 +77,7 @@
   mermaid.initialize({ startOnLoad: true });
 </script>
 
-<!-- Accordion & Active Link Logic -->
-<script>
-  // Accordion effect: only one open
-  document.querySelectorAll('.collapse').forEach(function (collapse) {
-    collapse.addEventListener('show.bs.collapse', function () {
-      document.querySelectorAll('.collapse').forEach(function (other) {
-        if (other !== collapse) {
-          new bootstrap.Collapse(other, { toggle: false }).hide();
-        }
-      });
-    });
-  });
 
-  // Active link detection and collapse auto open
-  document.addEventListener("DOMContentLoaded", function () {
-    const path = window.location.pathname;
-    document.querySelectorAll("#sidebar .nav-link").forEach(link => {
-      const href = link.getAttribute("href");
-      if (href && path.includes(href)) {
-        link.classList.add("active");
-        const parentCollapse = link.closest(".collapse");
-        if (parentCollapse) {
-          new bootstrap.Collapse(parentCollapse, { toggle: false }).show();
-        }
-      }
-    });
-  });
-</script>
-  <script>
-  document.querySelectorAll('.nav-link').forEach(link => {
-    link.addEventListener('click', function () {
-      // Tüm nav-link öğelerinden active sınıfını kaldır
-      document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
-      
-      // Tıklanan linke active sınıfını ekle
-      this.classList.add('active');
-    });
-  });
-</script>
 
 
 </body>
