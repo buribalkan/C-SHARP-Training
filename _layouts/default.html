@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8" />
   <title>{{ page.title }}</title>
-  
 
   <!-- MathJax config -->
   <script>
@@ -33,8 +32,8 @@
     }
   </style>
   
-    <!-- Bootstrap CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/style.css">
   <link rel="icon" href="{{ site.baseurl }}/assets/favicon.ico">
 </head>
@@ -42,16 +41,17 @@
 
 <div class="container-fluid">
   <div class="row">
-    <nav class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse show">
+    <!-- Sidebar -->
+    <nav id="sidebar" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse show">
       {% include sidebar.html %}
     </nav>
 
+    <!-- Main content area -->
     <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 py-4">
       {{ content }}
     </main>
   </div>
 </div>
-
 
 <!-- jQuery (Bootstrap için gerekli) -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -59,7 +59,8 @@
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
-  <script type="module">
+<!-- Syntax highlighting -->
+<script type="module">
   import hljs from 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/es/highlight.min.js';
 
   function escapeHtml(text) {
@@ -71,18 +72,22 @@
 
   document.querySelectorAll('pre.highlight > code').forEach((codeBlock) => {
     const escaped = escapeHtml(codeBlock.textContent);
-    codeBlock.parentElement.outerHTML = <pre><code style="background: #f4f4f4;" class="language-csharp codeArea">${escaped}</code></pre>;
+    codeBlock.parentElement.outerHTML = `<pre><code style="background: #f4f4f4;" class="language-csharp codeArea">${escaped}</code></pre>`;
   });
 
   hljs.highlightAll();
 </script>
+
+<!-- Mermaid.js for diagrams -->
 <script type="module">
   import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
   mermaid.initialize({ startOnLoad: true });
   document.querySelectorAll('pre > code.language-mermaid').forEach((codeBlock) => {
-    codeBlock.parentElement.outerHTML = <pre class="mermaid">${codeBlock.textContent}</pre>;
+    codeBlock.parentElement.outerHTML = `<pre class="mermaid">${codeBlock.textContent}</pre>`;
   });
 </script>
+
+
 
 </body>
 </html>
