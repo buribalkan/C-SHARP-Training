@@ -113,11 +113,13 @@ title: Home
         <h5 class="card-title">🧩 Miscellaneous</h5>
         <ul class="list-unstyled mb-0">
           <li><a class="nav-link p-0" href="{{ site.baseurl }}/Creating-a-DLL">📦 Creating a DLL</a></li>
+          <li><a class="nav-link p-0" href="{{ site.baseurl }}/WindowsCMD">✩ Windows Command Line</a></li>
+          <li><a class="nav-link p-0" href="{{ site.baseurl }}/PowerShellCmd">✩ Windows PowerShell</a></li>
+          <li><a class="nav-link p-0" href="{{ site.baseurl }}/MacCommand">✩ macOS Terminal</a></li>
         </ul>
       </div>
     </div>
   </div>
-
 </div>
 
 
