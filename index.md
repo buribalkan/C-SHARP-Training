@@ -28,8 +28,9 @@ title: Home
           <li><a class="nav-link p-0" href="{{ site.baseurl }}/Lists">📚 Lists</a></li>
           <li><a class="nav-link p-0" href="{{ site.baseurl }}/Dictionaries">📚 Dictionaries</a></li>
           <li><a class="nav-link p-0" href="{{ site.baseurl }}/Tuples">🗺️ Tuples</a></li>
-          <li><a class="nav-link p-0" href="{{ site.baseurl }}/Loops">🔄 Loops</a></li>
           <li><a class="nav-link p-0" href="{{ site.baseurl }}/Conditionals">❓ Conditionals</a></li>
+          <li><a class="nav-link p-0" href="{{ site.baseurl }}/Loops">🔄 Loops</a></li>
+
         </ul>
       </div>
     </div>
@@ -45,6 +46,7 @@ title: Home
           <li><a class="nav-link p-0" href="{{ site.baseurl }}/Methods">🏷️ Methods</a></li>
           <li><a class="nav-link p-0" href="{{ site.baseurl }}/Mutability">🔒 Mutability</a></li>
           <li><a class="nav-link p-0" href="{{ site.baseurl }}/Delegates">🧠 Delegates</a></li>
+          <li><a class="nav-link p-0" href="{{ site.baseurl }}/Events">📢 Events</a></li>
           <li><a class="nav-link p-0" href="{{ site.baseurl }}/Lambda-Functions">🧠 Lambda Functions</a></li>
           <li><a class="nav-link p-0" href="{{ site.baseurl }}/Override">📘 Override</a></li>
           <li><a class="nav-link p-0" href="{{ site.baseurl }}/Interfaces">📘 Interfaces</a></li>
@@ -80,9 +82,10 @@ title: Home
           <li><a class="nav-link p-0" href="{{ site.baseurl }}/Lazy-Eager-Explicit-Loading">🔄 Lazy/Eager/Explicit Loading</a></li>
           <li><a class="nav-link p-0" href="{{ site.baseurl }}/Error-Handling">🛠 Error Handling</a></li>
           <li><a class="nav-link p-0" href="{{ site.baseurl }}/Generics">🧠 Generics</a></li>
+          <li><a class="nav-link p-0" href="{{ site.baseurl }}/Stack-Queue">📦 Stack Queue</a></li>
           <li><a class="nav-link p-0" href="{{ site.baseurl }}/Async-Await">🌐 Async & Await</a></li>
           <li><a class="nav-link p-0" href="{{ site.baseurl }}/Dependency-Injection">🔧 Dependency Injection</a></li>
-          <li><a class="nav-link p-0" href="{{ site.baseurl }}/Multithreading">⚙️ Multithreading</a></li>
+          <li><a class="nav-link p-0" href="{{ site.baseurl }}/Multithreading">🧵 Multithreading</a></li>
         </ul>
       </div>
     </div>
@@ -94,9 +97,9 @@ title: Home
       <div class="card-body">
         <h5 class="card-title">💻 CLI Commands</h5>
         <ul class="list-unstyled mb-0">
-          <li><a class="nav-link p-0" href="{{ site.baseurl }}/CLI-Commands">dotnet CLI</a></li>
-          <li><a class="nav-link p-0" href="{{ site.baseurl }}/CLI-Commands-dotnet-ef">dotnet ef CLI</a></li>
-          <li><a class="nav-link p-0" href="{{ site.baseurl }}/CLI-Commands-ASP-NET-Core">ASP.NET Core CLI</a></li>
+          <li><a class="nav-link p-0" href="{{ site.baseurl }}/CLI-Commands">💻 dotnet CLI</a></li>
+          <li><a class="nav-link p-0" href="{{ site.baseurl }}/CLI-Commands-dotnet-ef">💻 dotnet ef CLI</a></li>
+          <li><a class="nav-link p-0" href="{{ site.baseurl }}/CLI-Commands-ASP-NET-Core">💻 ASP.NET Core CLI</a></li>
         </ul>
       </div>
     </div>
