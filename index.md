@@ -135,7 +135,7 @@ title: Home
 # The Fastest Way to Test Code
 The fastest way to quickly test and understand code is by using **Polyglot Notebooks**.
 
-## Integrating Polyglot Notebooks with Visual Studio Code
+
 
 
 ### What are Polyglot Notebooks?
