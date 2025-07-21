@@ -171,7 +171,7 @@ You should see the installed .NET version as output.
   `Ctrl + Shift + P` (or `Cmd + Shift + P` on Mac) opens the Command Palette in VS Code. Search for commands like “Polyglot Notebooks: Create New Notebook” if the extension supports it. Typing `Create New` will show a list of commands, including options related to Polyglot Notebooks. Choose `Polyglot Notebooks: Create New Notebook` to create a new notebook.
 - The notebook supports multiple languages such as C#, F#, PowerShell, and HTML.
 
-#### <span style="color:#3498db">5. ▷ Run C# Code Cells</span>
+#### <span style="color:#3498db">5.</span> ▷ <span style="color:#3498db">Run C# Code Cells</span>
 - Add a new cell.
 - Optionally specify the language as C# by adding #!csharp at the top of the cell.
 - Write your C# code inside the cell.
