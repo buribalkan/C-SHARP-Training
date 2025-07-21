@@ -132,31 +132,31 @@ title: Home
 
 ---
 
-# The Fastest Way to Test Code
+# 🚀 The Fastest Way to Test Code
 The fastest way to quickly test and understand code is by using **Polyglot Notebooks**.
 
 
 
 
-### What are Polyglot Notebooks?
+### 📓 What are Polyglot Notebooks?
 
 **Polyglot Notebooks** are interactive notebooks that support multiple programming languages within the same environment, such as **C#**, **F#**, **PowerShell**, and more.
 
 
-### <span style="color:blue">How to Integrate Polyglot Notebooks into Visual Studio Code</span>
+### <span style="color:#3498db">How to Integrate Polyglot Notebooks into Visual Studio Code</span>
 ---
-#### 1. Install Visual Studio Code
+#### 1. 📥 Install Visual Studio Code
 
 If you don’t have it yet, download and install it from [https://code.visualstudio.com/](https://code.visualstudio.com/).
 
-#### 2. Install the Polyglot Notebooks Extension
+#### 2. ➕ Install the Polyglot Notebooks Extension
 
 - Open VS Code.
 - Open the **Extensions** panel (`Ctrl+Shift+X` on Windows/Linux or `Cmd+Shift+X` on Mac).
 - Search for **Polyglot Notebooks**.
 - Install the extension developed by **Microsoft**.
 
-#### 3. Install the .NET SDK (Necessary to Run C# Code)
+#### 3. 📥 Install the .NET SDK (Necessary to Run C# Code)
 
 - Download and install the latest [.NET SDK](https://dotnet.microsoft.com/en-us/download).
 - Verify the installation by running this command in your terminal:
@@ -169,6 +169,7 @@ You should see the installed .NET version as output.
 #### 4. Create or Open a Polyglot Notebook
 
 - Create a new file with the .dib extension (Dotnet Interactive Notebook) or open an existing one.
+  `Ctrl + Shift + P` (or `Cmd + Shift + P` on Mac) opens the Command Palette in VS Code. Search for commands like “Polyglot Notebooks: Create New Notebook” if the extension supports it. Typing `Create New` will show a list of commands, including options related to Polyglot Notebooks. `Choose Polyglot Notebooks: Create New Notebook` to create a new notebook.
 - The notebook supports multiple languages such as C#, F#, PowerShell, and HTML.
 
 #### 5. Run C# Code Cells
@@ -177,7 +178,7 @@ You should see the installed .NET version as output.
 - Write your C# code inside the cell.
 - Run the cell by clicking the Run Cell button (▶️) or by using keyboard shortcuts.
 
-#### Requirements to Run C# Code
+#### <span style="color:#3498db">Requirements to Run C# Code</span>
 
 - Installed .NET SDK on your machine (usually .NET 6 or later is recommended).
 - **Polyglot Notebooks** extension in Visual Studio Code.
