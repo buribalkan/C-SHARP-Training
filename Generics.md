@@ -211,19 +211,20 @@ public class MemoryRepository<T> : IRepository<T>
 
 ```mermaid
 classDiagram
-    class IRepository {
+    class IRepositoryT {
         <<interface>>
         +Add(item)
         +GetAll() List
     }
 
-    class MemoryRepository {
+    class MemoryRepositoryT {
         +Add(item)
         +GetAll() List
     }
 
-    MemoryRepository --|> IRepository
+    MemoryRepositoryT --|> IRepositoryT
 ```
+
 
 
 
