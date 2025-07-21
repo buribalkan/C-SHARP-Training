@@ -20,9 +20,11 @@ title: Home
         <h5 class="card-title">🧠 Core Programming Concepts</h5>
         <ul class="list-unstyled mb-0">
           <li><a class="nav-link p-0" href="{{ site.baseurl }}/Variables">🔢 Variables</a></li>
-          <li><a class="nav-link p-0" href="{{ site.baseurl }}/Types">🔤 Types</a></li>
           <li><a class="nav-link p-0" href="{{ site.baseurl }}/Strings">🔤 String Operations</a></li>
           <li><a class="nav-link p-0" href="{{ site.baseurl }}/DateTime">🕒 DateTime</a></li>
+          <li><a class="nav-link p-0" href="{{ site.baseurl }}/Types">🔤 Types</a></li>
+          <li><a class="nav-link p-0" href="{{ site.baseurl }}/Enums">🎌 Enums</a></li>
+          <li><a class="nav-link p-0" href="{{ site.baseurl }}/Structs">🧱 Structs</a></li>
           <li><a class="nav-link p-0" href="{{ site.baseurl }}/Collections">🧺 Collections</a></li>
           <li><a class="nav-link p-0" href="{{ site.baseurl }}/Arrays">🧱 Arrays</a></li>
           <li><a class="nav-link p-0" href="{{ site.baseurl }}/Lists">📚 Lists</a></li>
