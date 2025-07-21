@@ -168,7 +168,7 @@ You should see the installed .NET version as output.
 #### <span style="color:#3498db">4. ✏️ Create or Open a Polyglot Notebook</span>
 
 - Create a new file with the .dib extension (Dotnet Interactive Notebook) or open an existing one.
-  `Ctrl + Shift + P` (or `Cmd + Shift + P` on Mac) opens the Command Palette in VS Code. Search for commands like “Polyglot Notebooks: Create New Notebook” if the extension supports it. Typing `Create New` will show a list of commands, including options related to Polyglot Notebooks. `Choose Polyglot Notebooks: Create New Notebook` to create a new notebook.
+  `Ctrl + Shift + P` (or `Cmd + Shift + P` on Mac) opens the Command Palette in VS Code. Search for commands like “Polyglot Notebooks: Create New Notebook” if the extension supports it. Typing `Create New` will show a list of commands, including options related to Polyglot Notebooks. Choose `Polyglot Notebooks: Create New Notebook` to create a new notebook.
 - The notebook supports multiple languages such as C#, F#, PowerShell, and HTML.
 
 #### <span style="color:#3498db">5. ▷ Run C# Code Cells</span>
