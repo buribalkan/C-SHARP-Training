@@ -209,21 +209,24 @@ public class MemoryRepository<T> : IRepository<T>
 
 
 
+{% raw %}
 ```mermaid
 classDiagram
-class IRepository&lt;T&gt; {
+class IRepository<T> {
     <<interface>>
     +Add(item: T)
-    +GetAll(): List&lt;T&gt;
+    +GetAll(): List<T>
 }
 
-class MemoryRepository&lt;T&gt; {
+class MemoryRepository<T> {
     +Add(item: T)
-    +GetAll(): List&lt;T&gt;
+    +GetAll(): List<T>
 }
 
-MemoryRepository&lt;T&gt; --|&gt; IRepository&lt;T&gt;
+MemoryRepository<T> --|> IRepository<T>
 ```
+{% endraw %}
+
 
 
 
