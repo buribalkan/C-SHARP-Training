@@ -3,9 +3,9 @@ layout: default
 title: Home
 ---
 
-# 📚 Welcome to Statistics Learning
+# 📚 Welcome to C# Training
 
-> Learn statistics step-by-step — from basics to advanced topics — with clear structure, charts, and examples.
+> Learn C# step-by-step — from basics to advanced topics — with clear structure, charts, and examples.
 
 ---
 
