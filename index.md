@@ -185,7 +185,5 @@ You should see the installed .NET version as output.
 
 #### Example of a C# Cell
 ```csharp
-
 Console.WriteLine("Running C# code inside Polyglot Notebooks!");
-
 ```
