@@ -30,7 +30,6 @@ title: Home
           <li><a class="nav-link p-0" href="{{ site.baseurl }}/Tuples">🗺️ Tuples</a></li>
           <li><a class="nav-link p-0" href="{{ site.baseurl }}/Conditionals">❓ Conditionals</a></li>
           <li><a class="nav-link p-0" href="{{ site.baseurl }}/Loops">🔄 Loops</a></li>
-
         </ul>
       </div>
     </div>
