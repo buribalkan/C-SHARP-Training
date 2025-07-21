@@ -1,4 +1,4 @@
-# 📘 C# Generics Training Guide
+# 📘 C# Generics Guide
 
 
 
