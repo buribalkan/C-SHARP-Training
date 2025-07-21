@@ -205,31 +205,9 @@ public class MemoryRepository<T> : IRepository<T>
 
 
 
-## 🔄 Diagram: Interface Implementation
 
 
 
-```mermaid
-classDiagram
-class IRepository_T {
-    <<interface>>
-    +Add(item)
-    +GetAll()
-}
-
-class MemoryRepository_T {
-    +Add(item)
-    +GetAll()
-}
-
-MemoryRepository_T --|> IRepository_T
-```
-
-
-
-
-
----
 
 
 
